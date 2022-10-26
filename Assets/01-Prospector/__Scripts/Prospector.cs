@@ -11,10 +11,26 @@ public class Prospector : MonoBehaviour {
 
 	[Header("Set in Inspector")]
 	public TextAsset			deckXML;
+	public TextAsset layoutXML;
+	public float xOffset = 3;
+
+	public float yOffset = -2.5f;
+
+	public Vector3 layoutCenter;
 
 
 	[Header("Set Dynamically")]
 	public Deck					deck;
+	public Layout layout;
+	public List<CardProspector> drawPile;
+	public Transform layoutAnchor;
+
+	public CardProspector target;
+
+	public List<CardProspector> tableau;
+
+	public List<CardProspector> discardPile;
+
 
 	void Awake(){
 		S = this;
@@ -23,6 +39,98 @@ public class Prospector : MonoBehaviour {
 	void Start() {
 		deck = GetComponent<Deck> ();
 		deck.InitDeck (deckXML.text);
+		Deck.Shuffle(ref deck.cards); // This shuffles the deck by reference // a
+
+
+		/*
+		Card c;
+
+		for (int cNum = 0; cNum < deck.cards.Count; cNum++)
+		{                    // b
+
+			c = deck.cards[cNum];
+
+			c.transform.localPosition = new Vector3((cNum % 13) * 3, cNum / 13 * 4, 0);
+
+		}
+		*/
+		layout = GetComponent<Layout>();  // Get the Layout component
+
+		layout.ReadLayout(layoutXML.text); // Pass LayoutXML to it
+		drawPile = ConvertListCardsToListCardProspectors(deck.cards);
+		LayoutGame();
 	}
 
+	List<CardProspector> ConvertListCardsToListCardProspectors(List<Card> lCD)
+	{
+
+		List<CardProspector> lCP = new List<CardProspector>();
+
+		CardProspector tCP;
+
+		foreach (Card tCD in lCD)
+		{
+
+			tCP = tCD as CardProspector;                                     
+
+			lCP.Add(tCP);
+
+		}
+
+		return (lCP);
+
+	}
+
+	CardProspector Draw()
+	{
+
+		CardProspector cd = drawPile[0]; // Pull the 0th CardProspector
+
+		drawPile.RemoveAt(0);            // Then remove it from List<> drawPile
+
+		return (cd);                      // And return it
+	}
+
+	// LayoutGame() positions the initial tableau of cards, a.k.a. the "mine"
+
+	void LayoutGame()
+	{
+
+		// Create an empty GameObject to serve as an anchor for the tableau // a
+
+		if (layoutAnchor == null)
+		{
+
+			GameObject tGO = new GameObject("_LayoutAnchor");
+
+			// ^ Create an empty GameObject named _LayoutAnchor in the Hierarchy
+
+			layoutAnchor = tGO.transform;              // Grab its Transform
+
+			layoutAnchor.transform.position = layoutCenter;   // Position it
+
+		}
+		// LayoutGame() positions the initial tableau of cards, a.k.a. the "mine"
+
+		void LayoutGame()
+		{
+
+			// Create an empty GameObject to serve as an anchor for the tableau // a
+
+			if (layoutAnchor == null)
+			{
+
+				GameObject tGO = new GameObject("_LayoutAnchor");
+
+				// ^ Create an empty GameObject named _LayoutAnchor in the Hierarchy
+
+				layoutAnchor = tGO.transform;              // Grab its Transform
+
+				layoutAnchor.transform.position = layoutCenter;   // Position it
+
+			}
+
+
+		}
+	}
 }
