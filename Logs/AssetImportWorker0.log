@@ -230,3 +230,57 @@ Received Import Request.
   path: Assets/01-Prospector/__Scripts/ScoreManager.cs
   artifactKey: Guid(eb77eff4218870e46bd4d44db1b99c1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/01-Prospector/__Scripts/ScoreManager.cs using Guid(eb77eff4218870e46bd4d44db1b99c1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1871ed365de0d2173c6ad0e5d14f38e2') in 0.002284 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1338.100234 seconds.
+  path: Assets/01-Prospector/__Scripts/FloatingScore.cs
+  artifactKey: Guid(d478ebd4876f5b945b38b8f69d0834da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01-Prospector/__Scripts/FloatingScore.cs using Guid(d478ebd4876f5b945b38b8f69d0834da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dae49583f5528c11cd024974e8a628e5') in 0.006566 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.763090 seconds.
+  path: Assets/01-Prospector/__Scripts/FloatingScore.cs
+  artifactKey: Guid(d478ebd4876f5b945b38b8f69d0834da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01-Prospector/__Scripts/FloatingScore.cs using Guid(d478ebd4876f5b945b38b8f69d0834da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51bb62b01b5eb19d98915a1d1b400805') in 0.002301 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 71.955379 seconds.
+  path: Assets/01-Prospector/__Scripts/Scoreboard.cs
+  artifactKey: Guid(0bcc3245b5bd95c4caa505b9aa26ad99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01-Prospector/__Scripts/Scoreboard.cs using Guid(0bcc3245b5bd95c4caa505b9aa26ad99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00967fbf22ef84cbde096fa40cbc6218') in 0.006096 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 73.724865 seconds.
+  path: Assets/01-Prospector/__Scripts/Scoreboard.cs
+  artifactKey: Guid(0bcc3245b5bd95c4caa505b9aa26ad99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01-Prospector/__Scripts/Scoreboard.cs using Guid(0bcc3245b5bd95c4caa505b9aa26ad99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbb4106cfc86d705244a0c33d02e673a') in 0.002239 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2280.672245 seconds.
+  path: Assets/01-Prospector/Resources
+  artifactKey: Guid(51e47f0e640584bc29fe5a56a37cd852) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01-Prospector/Resources using Guid(51e47f0e640584bc29fe5a56a37cd852) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b58b6958b36284750112135e4b0dfeac') in 0.006243 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.473172 seconds.
+  path: Assets/01-Prospector/_Prefabs
+  artifactKey: Guid(5a212e8a7402987489ab48b3213b541e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01-Prospector/_Prefabs using Guid(5a212e8a7402987489ab48b3213b541e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae4f522293bb7f5e9720941f068f0701') in 0.006138 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.020795 seconds.
+  path: Assets/01-Prospector/_Prefabs/PrefabCard.prefab
+  artifactKey: Guid(ee93767be21efa14eaa16db1093e90b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01-Prospector/_Prefabs/PrefabCard.prefab using Guid(ee93767be21efa14eaa16db1093e90b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '865db55d1a055da1337b7477b8aa2aae') in 0.073653 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.828484 seconds.
+  path: Assets/Materials
+  artifactKey: Guid(d0217d346471649b9800f30a40f91143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials using Guid(d0217d346471649b9800f30a40f91143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '005c37f9b756795a3badd6b1401453a5') in 0.005900 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.808861 seconds.
+  path: Assets/01-Prospector/Lighting
+  artifactKey: Guid(58d67faf47dad480fbfb859922447772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01-Prospector/Lighting using Guid(58d67faf47dad480fbfb859922447772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab7ac96d01f5efd6946e336dd947cabc') in 0.006185 seconds 

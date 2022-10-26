@@ -101,9 +101,9 @@ public class Layout : MonoBehaviour
             if (slotsX[i].HasAtt("type"))
             {
 
-            ????// If this <slot> has a type attribute parse it
+            // If this <slot> has a type attribute parse it
 
-            ????tSD.type = slotsX[i].att("type");
+            tSD.type = slotsX[i].att("type");
 
             }
             else
