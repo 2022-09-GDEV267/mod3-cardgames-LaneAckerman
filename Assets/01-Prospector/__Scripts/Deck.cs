@@ -251,7 +251,8 @@ public class Deck : MonoBehaviour {
 			card.back = tGO;
 			card.faceUp = false;
 			
-			cards.Add (MakeCard(i));
+			//cards.Add (MakeCard(i));
+			cards.Add(card);
 		} // for all the Cardnames	
 	} // makeCards
 

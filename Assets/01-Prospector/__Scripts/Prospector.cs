@@ -652,6 +652,7 @@ public class Prospector : MonoBehaviour {
 
 			}
 
+			ShowResultsUI(true);
 			//print("Game Over. You Lost. :(");
 			ScoreManager.EVENT(eScoreEvent.gameLoss);
 			FloatingScoreHandler(eScoreEvent.gameLoss);
@@ -675,7 +676,7 @@ public class Prospector : MonoBehaviour {
 
 		// Reload the scene, resetting the game
 
-		SceneManager.LoadScene("__Prospector_Scene_0");
+		SceneManager.LoadScene("__Prospector");
 
 	}
 
