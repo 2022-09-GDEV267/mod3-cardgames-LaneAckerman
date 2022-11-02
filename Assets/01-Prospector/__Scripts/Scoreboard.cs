@@ -6,6 +6,8 @@ using UnityEngine;
 
 using UnityEngine.UI;
 
+using Golf;
+
 
 
 // The Scoreboard class manages showing the score to the player

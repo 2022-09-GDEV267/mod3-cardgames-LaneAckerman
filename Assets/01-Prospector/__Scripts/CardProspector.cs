@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Golf;
 
 // An enum defines a variable type with a few prenamed values        // a
 
@@ -38,7 +39,9 @@ public class CardProspector : Card
 
     // The SlotDef class stores information pulled in from the LayoutXML <slot>
 
-    public SlotDef slotDef;
+    public Golf.SlotDef slotDef;
+
+    //public SlotDef slotDef;
 
     // This allows the card to react to being clicked
 
