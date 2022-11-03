@@ -39,15 +39,15 @@ namespace Golf
 
 		public LayoutGolf layout;
 
-		public List<CardProspector> drawPile;
+		public List<CardGolf> drawPile;
 
 		public Transform layoutAnchor;
 
-		public CardProspector target;
+		public CardGolf target;
 
-		public List<CardProspector> tableau;
+		public List<CardGolf> tableau;
 
-		public List<CardProspector> discardPile;
+		public List<CardGolf> discardPile;
 
 		public FloatingScore fsRun;
 
@@ -149,17 +149,17 @@ namespace Golf
 			LayoutGame();
 		}
 
-		List<CardProspector> ConvertListCardsToListCardProspectors(List<Card> lCD)
+		List<CardGolf> ConvertListCardsToListCardProspectors(List<Card> lCD)
 		{
 
-			List<CardProspector> lCP = new List<CardProspector>();
+			List<CardGolf> lCP = new List<CardGolf>();
 
-			CardProspector tCP;
+			CardGolf tCP;
 
 			foreach (Card tCD in lCD)
 			{
 
-				tCP = tCD as CardProspector;
+				tCP = tCD as CardGolf;
 
 				lCP.Add(tCP);
 
@@ -169,10 +169,10 @@ namespace Golf
 
 		}
 
-		CardProspector Draw()
+		CardGolf Draw()
 		{
 
-			CardProspector cd = drawPile[0]; // Pull the 0th CardProspector
+			CardGolf cd = drawPile[0]; // Pull the 0th CardProspector
 
 			drawPile.RemoveAt(0);            // Then remove it from List<> drawPile
 
@@ -200,7 +200,7 @@ namespace Golf
 			}
 			// LayoutGame() positions the initial tableau of cards, a.k.a. the "mine"
 
-			CardProspector cp;
+			CardGolf cp;
 
 			// Follow the layout
 
@@ -251,7 +251,7 @@ namespace Golf
 			// Set which cards are hiding others
 
 
-			foreach (CardProspector tCP in tableau)
+			foreach (CardGolf tCP in tableau)
 			{
 
 				foreach (int hid in tCP.slotDef.hiddenBy)
@@ -278,10 +278,10 @@ namespace Golf
 
 		// Convert from the layoutID int to the CardProspector with that ID
 
-		CardProspector FindCardByLayoutID(int layoutID)
+		CardGolf FindCardByLayoutID(int layoutID)
 		{
 
-			foreach (CardProspector tCP in tableau)
+			foreach (CardGolf tCP in tableau)
 			{
 
 				// Search through all cards in the tableau List<>
@@ -310,12 +310,12 @@ namespace Golf
 		void SetTableauFaces()
 		{
 
-			foreach (CardProspector cd in tableau)
+			foreach (CardGolf cd in tableau)
 			{
 
 				bool faceUp = true; // Assume the card will be face-up
 
-				foreach (CardProspector cover in cd.hiddenBy)
+				foreach (CardGolf cover in cd.hiddenBy)
 				{
 
 					// If either of the covering cards are in the tableau
@@ -338,7 +338,7 @@ namespace Golf
 
 		// Moves the current target to the discardPile
 
-		void MoveToDiscard(CardProspector cd)
+		void MoveToDiscard(CardGolf cd)
 		{
 
 			// Set the state of the card to discard
@@ -377,7 +377,7 @@ namespace Golf
 
 		// Make cd the new target card
 
-		void MoveToTarget(CardProspector cd)
+		void MoveToTarget(CardGolf cd)
 		{
 
 			// If there is currently a target card, move it to discardPile
@@ -422,7 +422,7 @@ namespace Golf
 		void UpdateDrawPile()
 		{
 
-			CardProspector cd;
+			CardGolf cd;
 
 			// Go through all the cards of the drawPile
 
@@ -467,7 +467,7 @@ namespace Golf
 
 		// CardClicked is called any time a card in the game is clicked
 
-		public void CardClicked(CardProspector cd)
+		public void CardClicked(CardGolf cd)
 		{
 
 			// The reaction is determined by the state of the clicked card
@@ -588,7 +588,7 @@ namespace Golf
 
 			// Check for remaining valid plays
 
-			foreach (CardProspector cd in tableau)
+			foreach (CardGolf cd in tableau)
 			{
 
 				if (AdjacentRank(cd, target))
@@ -679,13 +679,13 @@ namespace Golf
 
 			// Reload the scene, resetting the game
 
-			SceneManager.LoadScene("__Prospector");
+			SceneManager.LoadScene("__Golf");
 
 		}
 
 		// Return true if the two cards are adjacent in rank (A & K wrap around)
 
-		public bool AdjacentRank(CardProspector c0, CardProspector c1)
+		public bool AdjacentRank(CardGolf c0, CardGolf c1)
 		{
 
 			// If either card is face-down, it's not adjacent.

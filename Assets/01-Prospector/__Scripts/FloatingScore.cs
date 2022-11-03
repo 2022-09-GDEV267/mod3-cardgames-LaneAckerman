@@ -109,7 +109,8 @@ public class FloatingScore : MonoBehaviour
 
         rectTrans = GetComponent<RectTransform>();
 
-        rectTrans.anchoredPosition = Vector2.zero;
+        rectTrans.anchoredPosition = new Vector2(-617, -934);
+        //rectTrans.anchoredPosition = Vector2.zero;
 
 
 

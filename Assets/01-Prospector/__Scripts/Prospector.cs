@@ -229,7 +229,7 @@ public class Prospector : MonoBehaviour {
 
 			cp.layoutID = tSD.id;
 
-			cp.slotDef = tSD;
+			//cp.slotDef = tSD;
 
 			// CardProspectors in the tableau have the state CardState.tableau
 
