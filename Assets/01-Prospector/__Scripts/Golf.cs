@@ -51,6 +51,10 @@ namespace Golf
 
 		public FloatingScore fsRun;
 
+		int holeCount = 0;
+
+		int tablaeuScore;
+
 
 		void Awake()
 		{
@@ -609,6 +613,7 @@ namespace Golf
 
 			// Call GameOver with a loss
 
+			tablaeuScore = tableau.Count;
 			GameOver(false);
 
 		}
@@ -621,22 +626,109 @@ namespace Golf
 		{
 			int score = ScoreManager.SCORE;
 
-			if (fsRun != null) score += fsRun.score;
-
-			if (won)
+			//if (fsRun != null) score += fsRun.score;
+			score = tablaeuScore;
+			holeCount++;
+			if (holeCount < 7)
 			{
-				gameOverText.text = "Round Over";
+				/*
+				if (won)
+				{
+					gameOverText.text = "Round Over";
 
-				roundResultText.text = "You won this round!\nRound Score: " + score;
+					//roundResultText.text = "You won this round!\nRound Score: " + score;
+
+					ShowResultsUI(true);
+					//print("Game Over. You won! :)");
+					ScoreManager.EVENT(eScoreEvent.gameWin);
+					FloatingScoreHandler(eScoreEvent.gameWin);
+
+				}
+				else
+				{
+
+					
+					gameOverText.text = "Game Over";
+
+					if (ScoreManager.HIGH_SCORE <= score)
+					{
+
+						string str = "You got the high score!\nHigh score: " + score;
+
+						roundResultText.text = str;
+
+					}
+					else
+					{
+
+						roundResultText.text = "Your final score was: " + score;
+
+					}
+
+					ShowResultsUI(true);
+					//print("Game Over. You Lost. :(");
+					ScoreManager.EVENT(eScoreEvent.gameLoss);
+					FloatingScoreHandler(eScoreEvent.gameLoss);
+					
+
+				}
+				*/
+
+				gameOverText.text = "Round Over";
+				
+
+				//roundResultText.text = "You won this round!\nRound Score: " + score;
 
 				ShowResultsUI(true);
 				//print("Game Over. You won! :)");
 				ScoreManager.EVENT(eScoreEvent.gameWin);
 				FloatingScoreHandler(eScoreEvent.gameWin);
 
+				Invoke("LoadNextHole", reloadDelay);
 			}
-			else
-			{
+
+            else
+            {
+				/*
+				if (won)
+				{
+					gameOverText.text = "Round Over";
+
+					roundResultText.text = "You won this round!\nRound Score: " + score;
+
+					ShowResultsUI(true);
+					//print("Game Over. You won! :)");
+					ScoreManager.EVENT(eScoreEvent.gameWin);
+					FloatingScoreHandler(eScoreEvent.gameWin);
+
+				}
+				else
+				{
+
+					gameOverText.text = "Game Over";
+
+					if (ScoreManager.HIGH_SCORE <= score)
+					{
+
+						string str = "You got the high score!\nHigh score: " + score;
+
+						roundResultText.text = str;
+
+					}
+					else
+					{
+
+						roundResultText.text = "Your final score was: " + score;
+
+					}
+
+					ShowResultsUI(true);
+					//print("Game Over. You Lost. :(");
+					ScoreManager.EVENT(eScoreEvent.gameLoss);
+					FloatingScoreHandler(eScoreEvent.gameLoss);
+
+				}
+				*/
 
 				gameOverText.text = "Game Over";
 
@@ -660,6 +752,8 @@ namespace Golf
 				ScoreManager.EVENT(eScoreEvent.gameLoss);
 				FloatingScoreHandler(eScoreEvent.gameLoss);
 
+				Invoke("ReloadLevel", reloadDelay);
+
 			}
 
 			// Reload the scene, resetting the game
@@ -670,7 +764,7 @@ namespace Golf
 
 			// This will give the score a moment to travel
 
-			Invoke("ReloadLevel", reloadDelay);
+			//Invoke("ReloadLevel", reloadDelay);
 
 		}
 
@@ -681,6 +775,11 @@ namespace Golf
 
 			SceneManager.LoadScene("__Golf");
 
+		}
+
+		void LoadNextHole()
+        {
+			SceneManager.LoadScene("__Golf " + holeCount);
 		}
 
 		// Return true if the two cards are adjacent in rank (A & K wrap around)

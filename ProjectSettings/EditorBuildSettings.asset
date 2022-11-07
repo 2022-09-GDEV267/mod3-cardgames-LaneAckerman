@@ -5,5 +5,31 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/__Prospector_Scene_0.unity
+    guid: 48b20ad76294a674395778a3c5b9ee64
+  - enabled: 1
+    path: Assets/01-Prospector/__Golf.unity
+    guid: 1ee5bc3f63fc66745abb1937c8cf37ba
+  - enabled: 1
+    path: Assets/01-Prospector/__Golf 1.unity
+    guid: 52a955be91cf566449e90c4023cfa164
+  - enabled: 1
+    path: Assets/01-Prospector/__Golf 2.unity
+    guid: 387c5a18d197b9c41b2a1fc3c1619da2
+  - enabled: 1
+    path: Assets/01-Prospector/__Golf 3.unity
+    guid: 42de0387afe4b9b41b3fec59f0e80646
+  - enabled: 1
+    path: Assets/01-Prospector/__Golf 4.unity
+    guid: cb23d683b862ad54e8e7992e41d6ea47
+  - enabled: 1
+    path: Assets/01-Prospector/__Golf 5.unity
+    guid: 95cc90289f822e744b3951e3e0e7105d
+  - enabled: 1
+    path: Assets/01-Prospector/__Golf 6.unity
+    guid: c0a700cb8c0eae94f9d5b636593f3630
+  - enabled: 1
+    path: Assets/01-Prospector/__Golf 7.unity
+    guid: 2d3131c75d8b53948822125a3e31500a
+  m_configObjects: {}
