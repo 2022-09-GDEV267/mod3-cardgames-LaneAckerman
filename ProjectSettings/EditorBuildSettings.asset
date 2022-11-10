@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/01-Prospector/__Golf 7.unity
     guid: 2d3131c75d8b53948822125a3e31500a
+  - enabled: 1
+    path: Assets/01-Prospector/__Golf 8.unity
+    guid: 9366c8e8183dc854b83efe7123886446
   m_configObjects: {}

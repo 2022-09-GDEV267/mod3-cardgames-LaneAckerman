@@ -128,6 +128,7 @@ public class ScoreManager : MonoBehaviour
                 chain = 0;             // resets the score chain
 
                 score += scoreRun;     // add scoreRun to total score
+                //score += tablaeu.Count;
 
                 scoreRun = 0;          // reset scoreRun
 

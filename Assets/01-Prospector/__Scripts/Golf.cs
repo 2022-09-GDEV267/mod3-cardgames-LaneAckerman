@@ -51,9 +51,10 @@ namespace Golf
 
 		public FloatingScore fsRun;
 
-		int holeCount = 0;
+		public static int holeCount = 0;
 
 		int tablaeuScore;
+		//public GameObject holeCounter;
 
 
 		void Awake()
@@ -133,6 +134,8 @@ namespace Golf
 			deck.InitDeck(deckXML.text);
 			Deck.Shuffle(ref deck.cards); // This shuffles the deck by reference // a
 
+			//holeCounter = GameObject.Find("HoleCounter");
+			//holeCount = holeCounter.count; 
 
 			/*
 			Card c;
@@ -613,7 +616,7 @@ namespace Golf
 
 			// Call GameOver with a loss
 
-			tablaeuScore = tableau.Count;
+			//tablaeuScore = tableau.Count;
 			GameOver(false);
 
 		}
@@ -625,11 +628,11 @@ namespace Golf
 		void GameOver(bool won)
 		{
 			int score = ScoreManager.SCORE;
-
+			tablaeuScore = tableau.Count;
 			//if (fsRun != null) score += fsRun.score;
 			score = tablaeuScore;
-			holeCount++;
-			if (holeCount < 7)
+			//holeCount++;
+			if (holeCount <= 7)
 			{
 				/*
 				if (won)
@@ -683,6 +686,7 @@ namespace Golf
 				//print("Game Over. You won! :)");
 				ScoreManager.EVENT(eScoreEvent.gameWin);
 				FloatingScoreHandler(eScoreEvent.gameWin);
+				holeCount++;
 
 				Invoke("LoadNextHole", reloadDelay);
 			}
@@ -729,7 +733,7 @@ namespace Golf
 
 				}
 				*/
-
+				holeCount = 0;
 				gameOverText.text = "Game Over";
 
 				if (ScoreManager.HIGH_SCORE <= score)
@@ -751,6 +755,7 @@ namespace Golf
 				//print("Game Over. You Lost. :(");
 				ScoreManager.EVENT(eScoreEvent.gameLoss);
 				FloatingScoreHandler(eScoreEvent.gameLoss);
+				
 
 				Invoke("ReloadLevel", reloadDelay);
 
@@ -779,6 +784,7 @@ namespace Golf
 
 		void LoadNextHole()
         {
+			//holeCounter.count = holeCount;
 			SceneManager.LoadScene("__Golf " + holeCount);
 		}
 
