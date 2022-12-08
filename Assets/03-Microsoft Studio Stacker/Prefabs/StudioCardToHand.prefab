@@ -1931,6 +1931,7 @@ GameObject:
   - component: {fileID: 2787821812250762399}
   - component: {fileID: 2787821812250762400}
   - component: {fileID: 166120083081864191}
+  - component: {fileID: 110678696255101716}
   m_Layer: 5
   m_Name: StudioCardToHand
   m_TagString: Clone
@@ -2059,13 +2060,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6365631685141597730}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32b3c4feb1ac25d47b3a8f187eb2ef18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Hand: {fileID: 0}
   HandCard: {fileID: 6365631685141597730}
+--- !u!114 &110678696255101716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6365631685141597730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fa16978808a52d4f97f113332e668ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6974836765424645438
 GameObject:
   m_ObjectHideFlags: 0

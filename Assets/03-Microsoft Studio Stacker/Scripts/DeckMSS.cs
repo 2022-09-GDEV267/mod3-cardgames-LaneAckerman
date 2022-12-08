@@ -9,7 +9,7 @@ public class DeckMSS : MonoBehaviour
     public int x;
     public static int deckSize;
     public List<CardMSS> deck = new List<CardMSS>();
-    public List<CardMSS> staticDeck = new List<CardMSS>();
+    public static List<CardMSS> staticDeck = new List<CardMSS>();
 
     public GameObject cardInStudioDeck1;
     public GameObject cardInStudioDeck2;

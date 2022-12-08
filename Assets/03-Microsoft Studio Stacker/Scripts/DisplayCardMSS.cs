@@ -90,7 +90,7 @@ public class DisplayCardMSS : MonoBehaviour
 
         if(this.tag == "Clone")
         {
-            //DisplayCard[0] = DeckMSS.staticDeck[numberOfCardsInDeck - 1];
+            DisplayCard[0] = DeckMSS.staticDeck[numberOfCardsInDeck - 1];
             numberOfCardsInDeck -= 1;
             DeckMSS.deckSize -= 1;
             cardBack = false;
