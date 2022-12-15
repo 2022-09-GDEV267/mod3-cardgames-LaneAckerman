@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 14727791}
   - component: {fileID: 14727790}
   - component: {fileID: 14727792}
+  - component: {fileID: 14727793}
   m_Layer: 5
   m_Name: ConceptDesignPhase
   m_TagString: Untagged
@@ -212,6 +213,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28c5ec0748d9974186bde6f5fe326d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &14727793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14727788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1001 &23214430
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2783,6 +2810,7 @@ GameObject:
   - component: {fileID: 872769959}
   - component: {fileID: 872769958}
   - component: {fileID: 872769960}
+  - component: {fileID: 872769961}
   m_Layer: 5
   m_Name: ActivePublishEvent
   m_TagString: Untagged
@@ -2860,6 +2888,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28c5ec0748d9974186bde6f5fe326d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &872769961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872769956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &1070184829
 GameObject:
   m_ObjectHideFlags: 0
@@ -3243,6 +3297,7 @@ GameObject:
   - component: {fileID: 1386641331}
   - component: {fileID: 1386641330}
   - component: {fileID: 1386641332}
+  - component: {fileID: 1386641333}
   m_Layer: 5
   m_Name: ConceptTestPhase
   m_TagString: Untagged
@@ -3320,6 +3375,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28c5ec0748d9974186bde6f5fe326d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1386641333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386641328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &1408960554
 GameObject:
   m_ObjectHideFlags: 0
@@ -3715,7 +3796,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 391.13, y: -274.92}
+  m_AnchoredPosition: {x: -173.87, y: 43.079987}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 2.04, y: 0.5}
 --- !u!114 &1516263433
@@ -4545,6 +4626,7 @@ GameObject:
   - component: {fileID: 1624265221}
   - component: {fileID: 1624265220}
   - component: {fileID: 1624265222}
+  - component: {fileID: 1624265223}
   m_Layer: 5
   m_Name: ConceptBuildPhase
   m_TagString: Untagged
@@ -4622,6 +4704,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28c5ec0748d9974186bde6f5fe326d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1624265223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624265218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &1651742971 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6365631685141597730, guid: bee05a7fce9dd38439b77cac7c7cd234,
@@ -4963,9 +5071,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 438015888}
-        m_TargetAssemblyTypeName: DeckMSS, Assembly-CSharp
-        m_MethodName: DrawStudio
+      - m_Target: {fileID: 1544838146}
+        m_TargetAssemblyTypeName: ConceptDeckMSS, Assembly-CSharp
+        m_MethodName: DrawConcept
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5675,6 +5783,7 @@ GameObject:
   - component: {fileID: 1819356945}
   - component: {fileID: 1819356944}
   - component: {fileID: 1819356946}
+  - component: {fileID: 1819356947}
   m_Layer: 5
   m_Name: ConceptPublishPhase
   m_TagString: Untagged
@@ -5752,6 +5861,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a28c5ec0748d9974186bde6f5fe326d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1819356947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819356942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &1972638258 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3492544845366461465, guid: bee05a7fce9dd38439b77cac7c7cd234,

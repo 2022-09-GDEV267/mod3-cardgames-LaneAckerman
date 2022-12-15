@@ -28,8 +28,8 @@ public class DisplayConceptMSS : MonoBehaviour
     public TMP_Text genreText;
     public TMP_Text valueText;
 
-    public bool cardBack;
-    public static bool staticCardBack;
+    public bool cCardBack;
+    public static bool staticCCardBack;
 
     public GameObject ConceptDeckPanel;
     public int cnumberOfCardsInDeck;
@@ -59,8 +59,8 @@ public class DisplayConceptMSS : MonoBehaviour
         descriptionText.text = " " + cardDescription;
         genreText.text = "Genre: " + genreColor;
         genreText.text = "Value: " + gameValue;
-
     }
+    
 
     // Update is called once per frame
     void Update()
@@ -87,17 +87,17 @@ public class DisplayConceptMSS : MonoBehaviour
         ConceptDeckPanel = GameObject.Find("ConceptDeckPanel");
         if(this.transform.parent != ConceptDeckPanel.transform.parent)
         {
-            cardBack = false;
+            cCardBack = false;
         }
 
-        staticCardBack = cardBack;
+        staticCCardBack = cCardBack;
 
         if(this.tag == "Clone")
         {
             cDisplayCard[0] = ConceptDeckMSS.staticCDeck[cnumberOfCardsInDeck - 1];
             cnumberOfCardsInDeck -= 1;
             ConceptDeckMSS.cDeckSize -= 1;
-            cardBack = false;
+            cCardBack = false;
             this.tag = "Untagged";
         }
 
