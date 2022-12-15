@@ -1142,7 +1142,6 @@ GameObject:
   - component: {fileID: 5099600779109537182}
   - component: {fileID: 6225625114653857205}
   - component: {fileID: 5072369517614528261}
-  - component: {fileID: 5072369517614528314}
   m_Layer: 5
   m_Name: ConceptDeckCard
   m_TagString: Untagged
@@ -1223,45 +1222,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardBack: {fileID: 5813297269538336643}
---- !u!114 &5072369517614528314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4072305556255286712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3372052d5ae75b441920494c0c63879b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DisplayCard:
-  - id: 0
-    cardName: 
-    design: 0
-    build: 0
-    test: 0
-    publish: 0
-    genreColor: 
-    cardDescription: 
-    gameValue: 0
-  displayId: 0
-  id: 0
-  cardName: 
-  design: 0
-  build: 0
-  test: 0
-  publish: 0
-  genreColor: 
-  cardDescription: 
-  gameValue: 0
-  nameText: {fileID: 8173746869780999264}
-  designText: {fileID: 1336950843092533236}
-  buildText: {fileID: 8020617654228538483}
-  testText: {fileID: 7659727441319969001}
-  publishText: {fileID: 9019211297038322787}
-  descriptionText: {fileID: 2133035527572309407}
-  cardBack: 0
 --- !u!1 &4906371222351713398
 GameObject:
   m_ObjectHideFlags: 0

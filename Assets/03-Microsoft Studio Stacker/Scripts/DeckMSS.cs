@@ -25,7 +25,7 @@ public class DeckMSS : MonoBehaviour
     void Start()
     {
         x = 0;
-        deckSize = 24;
+        deckSize = 50;
 
         for(int i = 0; i<deckSize; i++)
         {
@@ -45,17 +45,17 @@ public class DeckMSS : MonoBehaviour
     {
         staticDeck = deck;
 
-        if (deckSize < 19)
+        if (deckSize < 36)
         {
             cardInStudioDeck1.SetActive(false);
         }
 
-        if (deckSize < 13)
+        if (deckSize < 22)
         {
             cardInStudioDeck2.SetActive(false);
         }
 
-        if (deckSize < 7)
+        if (deckSize < 11)
         {
             cardInStudioDeck3.SetActive(false);
         }
@@ -88,4 +88,10 @@ public class DeckMSS : MonoBehaviour
             deck[randomIndex] = container[0];
         }
     }
+
+    public void DrawStudio()
+    {
+        Instantiate(StudioCardToHand, transform.position, transform.rotation);
+    }
+
 }

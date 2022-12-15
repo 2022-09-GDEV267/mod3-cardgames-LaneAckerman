@@ -14,6 +14,7 @@ public class CardMSS
     public string genreColor;
     public string cardDescription;
     public int gameValue;
+    public string type;
 
     public CardMSS()
     {
@@ -21,7 +22,7 @@ public class CardMSS
     }
 
 
-    public CardMSS(int Id, string CardName, int Design, int Build, int Test, int Publish, string CardDescription, string GenreColor, int GameValue)
+    public CardMSS(int Id, string CardName, int Design, int Build, int Test, int Publish, string CardDescription, string GenreColor, int GameValue, string Type)
     {
         id = Id;
         cardName = CardName;
@@ -32,6 +33,7 @@ public class CardMSS
         cardDescription = CardDescription;
         genreColor = GenreColor;
         gameValue = GameValue;
+        type = Type;
     }
 
 }

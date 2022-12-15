@@ -29,7 +29,7 @@ public class DisplayCardMSS : MonoBehaviour
     public bool cardBack;
     public static bool staticCardBack;
 
-    public GameObject Hand;
+    public GameObject StudioDeckPanel;
     public int numberOfCardsInDeck;
 
     // Start is called before the first frame update
@@ -80,8 +80,8 @@ public class DisplayCardMSS : MonoBehaviour
         descriptionText.text = " " + cardDescription;
 
 
-        Hand = GameObject.Find("Hand");
-        if(this.transform.parent == Hand.transform.parent)
+        StudioDeckPanel = GameObject.Find("StudioDeckPanel");
+        if(this.transform.parent != StudioDeckPanel.transform.parent)
         {
             cardBack = false;
         }

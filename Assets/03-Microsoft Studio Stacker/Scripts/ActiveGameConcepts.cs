@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StudioCardToHand : MonoBehaviour
+public class ActiveGameConcepts : MonoBehaviour
 {
 
-    public GameObject Hand;
-    public GameObject HandCard;
+    public GameObject AConcept;
+    public GameObject GCCard;
 
     // Start is called before the first frame update
     void Start()
     {
-        StudioDraw();
+        RevealConcepts();
     }
 
     // Update is called once per frame
@@ -26,13 +26,12 @@ public class StudioCardToHand : MonoBehaviour
         */
     }
 
-    public void StudioDraw()
+    public void RevealConcepts()
     {
-        Hand = GameObject.Find("Hand");
-        HandCard.transform.SetParent(Hand.transform);
-        HandCard.transform.localScale = Vector3.one;
-        HandCard.transform.position = new Vector3(transform.position.x, transform.position.y, -48);
-        HandCard.transform.eulerAngles = new Vector3(25, 0, 0);
+        AConcept = GameObject.Find("AvailableConcepts");
+        GCCard.transform.SetParent(AConcept.transform);
+        GCCard.transform.localScale = Vector3.one;
+        GCCard.transform.position = new Vector3(transform.position.x, transform.position.y, -48);
+        GCCard.transform.eulerAngles = new Vector3(25, 0, 0);
     }
 }
-

@@ -7,14 +7,14 @@ public class Drop : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerE
 {
     public void OnPointerEnter(PointerEventData eventData)
     {
-
+        CardManagerMSS.LastEnteredDropzone = transform;
 
 
     }
 
     public void OnDrop(PointerEventData eventData)
     {
-
+        //Drag.parentToReturnTo = this.transform.parent;
         Debug.Log("Drop");
 
     }
